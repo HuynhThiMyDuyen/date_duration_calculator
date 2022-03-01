@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: #FFCCFF;
+        }
+        div{
+            color:black;
+            text-align: center;
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white;
+            font-size:70px;
+            margin: 20px 20px;
+        }
+        p, label, input{
+            display: inline-block;
+            color: #330066;
+            font-family: verdana;
+            font-size: 30px;
+            align-self: center;
+        }
+        label{
+            width: 300px;
+            margin: 0px 20px 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/data" method="POST">
+        <div id="counter">ĐẾM NGÀY</div>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-heart"></i>
+
+        <label for="starttime">Ngày bắt đầu:</label>
+        <input type="datetime-local" id="starttime" name="starttime">
+        <br>
+
+        <i class="swap_vert"></i>
+        <label for="endtime">Ngày kết thúc:</label>
+        <input type="datetime-local" id="endtime" name="endtime">
+        <br>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+
+</body>
+</html>
